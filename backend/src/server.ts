@@ -33,11 +33,13 @@ import authRoutes from './routes/auth';
 import medicalRecordRoutes from './routes/medicalRecordRoutes';
 import prescriptionRoutes from './routes/prescriptionRoutes';
 import consultationRoutes from './routes/consultationRoutes';
+import appointmentRoutes from './routes/appointmentRoutes';
 
 app.use('/auth', authRoutes);
 app.use('/records', medicalRecordRoutes);
 app.use('/prescriptions', prescriptionRoutes);
 app.use('/consultations', consultationRoutes);
+app.use('/appointments', appointmentRoutes);
 
 // Basic test route
 app.get('/', (req, res) => {
